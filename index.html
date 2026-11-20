@@ -3,32 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Hunger Games Trilogy for Sale</title>
+  <title>The Hunger Games Trilogy - For Sale</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 flex items-center justify-center min-h-screen p-4 font-sans">
-  <div class="max-w-md w-full bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
-    <!-- Replace with your image filename in the repo -->
-    <img src="hunger-games.jpg" alt="The Hunger Games Trilogy" class="w-full h-64 object-cover">
+<body class="bg-gray-100 min-h-screen py-10 px-4 flex items-center justify-center font-sans">
+
+  <div class="max-w-md w-full bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-200">
     
-    <div class="p-6">
-      <div class="flex justify-between items-center mb-2">
-        <span class="text-xs uppercase font-bold tracking-wider text-amber-600 bg-amber-50 px-2 py-1 rounded">Used - Very Good</span>
-        <span class="text-2xl font-bold text-gray-900">120 MAD</span>
-      </div>
+    <!-- MAIN PHOTO DISPLAY -->
+    <div class="relative bg-gray-900 aspect-square overflow-hidden">
+      <!-- Default starting image -->
+      <img id="main-image" 
+           src="book1.jpg" 
+           alt="The Hunger Games Trilogy" 
+           class="w-full h-full object-cover transition-all duration-300">
+      <span class="absolute top-4 left-4 bg-emerald-600/90 backdrop-blur-sm text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow-sm">
+        Available
+      </span>
+    </div>
+
+    <!-- CLICKABLE THUMBNAILS -->
+    <div class="grid grid-cols-3 gap-2 p-3 bg-gray-50 border-b border-gray-100">
+      <!-- Thumbnail 1 (Cover) -->
+      <img src="book1.jpg" 
+           alt="Front view" 
+           onclick="changeImage(this.src)" 
+           class="h-20 w-full object-cover rounded-xl border-2 border-emerald-500 cursor-pointer hover:opacity-90 transition duration-150">
       
-      <h1 class="text-xl font-bold text-gray-900 mb-2">The Hunger Games Trilogy (Suzanne Collins)</h1>
-      <p class="text-gray-600 text-sm mb-4">
-        Complete 3-book set in English (The Hunger Games, Catching Fire, Mockingjay). Excellent condition, no torn pages. Available in Casablanca for hand-to-hand delivery.
+      <!-- Thumbnail 2 (Spine / Edges) -->
+      <img src="book2.jpg" 
+           alt="Spine view" 
+           onclick="changeImage(this.src)" 
+           class="h-20 w-full object-cover rounded-xl border border-gray-200 cursor-pointer hover:border-emerald-500 hover:opacity-90 transition duration-150">
+      
+      <!-- Thumbnail 3 (Pages / Inside) -->
+      <img src="book3.jpg" 
+           alt="Pages view" 
+           onclick="changeImage(this.src)" 
+           class="h-20 w-full object-cover rounded-xl border border-gray-200 cursor-pointer hover:border-emerald-500 hover:opacity-90 transition duration-150">
+    </div>
+
+    <!-- BOOK DETAILS & BUY BUTTON -->
+    <div class="p-6">
+      <div class="flex items-baseline justify-between mb-3">
+        <h1 class="text-xl font-extrabold text-gray-900 leading-tight">The Hunger Games Trilogy</h1>
+        <span class="text-2xl font-black text-emerald-700">120 <span class="text-sm font-semibold">MAD</span></span>
+      </div>
+
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="text-xs bg-gray-100 text-gray-700 font-medium px-2.5 py-1 rounded-md">Suzanne Collins</span>
+        <span class="text-xs bg-gray-100 text-gray-700 font-medium px-2.5 py-1 rounded-md">English Edition</span>
+        <span class="text-xs bg-emerald-50 text-emerald-800 font-medium px-2.5 py-1 rounded-md">Very Good Condition</span>
+        <span class="text-xs bg-gray-100 text-gray-700 font-medium px-2.5 py-1 rounded-md">📍 Casablanca</span>
+      </div>
+
+      <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+        Complete 3-book paperback box set (<em>The Hunger Games</em>, <em>Catching Fire</em>, and <em>Mockingjay</em>). All clean pages, intact spines, and in great reading condition. Available for in-person handover in Casablanca.
       </p>
 
-      <!-- Replace phone number with your Moroccan number (212XXXXXXXXX) -->
-      <a href="https://wa.me/212600000000?text=Hi!%20I'm%20interested%20in%20buying%20The%20Hunger%20Games%20trilogy" 
-         target="_blank"
-         class="block w-full text-center bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 px-4 rounded-xl transition duration-200">
-        💬 Buy via WhatsApp
+      <!-- WHATSAPP DIRECT BUTTON -->
+      <a href="https://wa.me/212619660854?text=Hi!%20I%20saw%20your%20listing%20for%20The%20Hunger%20Games%20trilogy.%20Are%20they%20still%20available%3F" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="w-full flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-3.5 px-6 rounded-2xl shadow-md hover:shadow-lg transition duration-200">
+        <!-- WhatsApp Icon SVG -->
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.539 1.93.826 2.791.826 3.182 0 5.768-2.587 5.769-5.767.001-3.182-2.585-5.769-5.77-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.062-2.115-.526-1.815-.751-2.986-2.595-3.077-2.716-.09-.12-1.026-1.364-1.026-2.602 0-1.238.647-1.848.877-2.102.23-.254.5-.318.667-.318.167 0 .334.002.479.01.153.007.359-.058.562.43.209.502.712 1.737.774 1.863.062.126.104.273.019.439-.084.166-.126.27-.249.417-.123.147-.258.328-.369.44-.124.125-.253.261-.109.509.144.248.641 1.057 1.378 1.713.949.845 1.748 1.107 1.996 1.231.248.124.394.104.539-.063.146-.166.626-.73.792-.98.166-.25.333-.209.562-.124.23.084 1.458.687 1.708.812.25.125.417.188.479.292.062.104.062.605-.082 1.01z"/>
+        </svg>
+        <span>Message on WhatsApp</span>
       </a>
+
+      <p class="text-center text-xs text-gray-400 mt-4">
+        Replies usually within a few hours • Cash on delivery / In-person
+      </p>
     </div>
+
   </div>
+
+  <!-- JAVASCRIPT FOR SWITCHING PHOTOS -->
+  <script>
+    function changeImage(newSrc) {
+      document.getElementById('main-image').src = newSrc;
+    }
+  </script>
+
 </body>
 </html>
