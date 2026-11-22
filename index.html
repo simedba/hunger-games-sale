@@ -4,29 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!-- Primary Title & Meta (Critical for Search Engines) -->
-  <title>simedba - The Hunger Games 5-Book Collection for Sale</title>
-  <meta name="title" content="simedba - The Hunger Games 5-Book Collection for Sale">
-  <meta name="description" content="Official listing by simedba: Complete 5-book Hunger Games set by Suzanne Collins in English. Available in Casablanca. Contact simedba via WhatsApp.">
+  <title>simedba - The Hunger Games 5-Book Collection for Sale (Casablanca)</title>
+  <meta name="title" content="simedba - The Hunger Games 5-Book Collection for Sale (Casablanca)">
+  <meta name="description" content="Official listing by simedba: Complete 5-book Hunger Games set by Suzanne Collins in English. Available in Casablanca for hand-to-hand delivery.">
   <meta name="author" content="simedba">
-  <meta name="keywords" content="simedba, hunger games casablanca, suzanne collins books, simedba books">
+  <meta name="keywords" content="simedba, hunger games casablanca, suzanne collins books, simedba books, books in english morocco">
+  <meta name="robots" content="index, follow">
 
-  <!-- Open Graph / Social Sharing (Helps Google & Bing understand the page) -->
+  <!-- Open Graph / Social Sharing -->
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://simedba.github.io/hunger-games-sale/">
   <meta property="og:title" content="simedba - The Hunger Games 5-Book Collection">
   <meta property="og:description" content="Buy the complete Hunger Games 5-book series from simedba in Casablanca.">
 
+  <!-- Schema.org Structured Data (Signals high quality to Bing & Yahoo) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "The Hunger Games Complete 5-Book Series",
+    "description": "Complete 5-book English set of The Hunger Games series by Suzanne Collins, sold by simedba in Casablanca.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Scholastic"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "MAD",
+      "price": "220",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Person",
+        "name": "simedba"
+      }
+    }
+  }
+  </script>
+
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 min-h-screen py-10 px-4 flex items-center justify-center font-sans">
+<body class="bg-gray-100 min-h-screen py-10 px-4 flex justify-center font-sans">
 
-  <div class="max-w-md w-full bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-200">
+  <div class="max-w-xl w-full bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-200">
     
     <!-- MAIN PHOTO DISPLAY -->
     <div class="relative bg-gray-900 aspect-square overflow-hidden">
       <img id="main-image" 
            src="book1.jpg" 
-           alt="The Hunger Games 5-Book Set" 
+           alt="The Hunger Games 5-Book Set by simedba" 
            class="w-full h-full object-cover transition-all duration-300">
       <span class="absolute top-4 left-4 bg-emerald-600/90 backdrop-blur-sm text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow-sm">
         Complete 5-Book Set
@@ -35,87 +60,83 @@
 
     <!-- 5 CLICKABLE THUMBNAILS -->
     <div class="grid grid-cols-5 gap-1.5 p-3 bg-gray-50 border-b border-gray-100">
-      <!-- Book 1: The Hunger Games -->
-      <img src="book1.jpg" 
-           alt="The Hunger Games" 
-           onclick="changeImage(this.src)" 
-           class="h-16 w-full object-cover rounded-lg border-2 border-emerald-500 cursor-pointer hover:opacity-80 transition duration-150">
-      
-      <!-- Book 2: Catching Fire -->
-      <img src="book2.jpg" 
-           alt="Catching Fire" 
-           onclick="changeImage(this.src)" 
-           class="h-16 w-full object-cover rounded-lg border border-gray-200 cursor-pointer hover:border-emerald-500 hover:opacity-80 transition duration-150">
-      
-      <!-- Book 3: Mockingjay -->
-      <img src="book3.jpg" 
-           alt="Mockingjay" 
-           onclick="changeImage(this.src)" 
-           class="h-16 w-full object-cover rounded-lg border border-gray-200 cursor-pointer hover:border-emerald-500 hover:opacity-80 transition duration-150">
-
-      <!-- Book 4: The Ballad of Songbirds and Snakes -->
-      <img src="book4.jpg" 
-           alt="The Ballad of Songbirds and Snakes" 
-           onclick="changeImage(this.src)" 
-           class="h-16 w-full object-cover rounded-lg border border-gray-200 cursor-pointer hover:border-emerald-500 hover:opacity-80 transition duration-150">
-
-      <!-- Book 5: Sunrise on the Reaping -->
-      <img src="book5.jpg" 
-           alt="Sunrise on the Reaping" 
-           onclick="changeImage(this.src)" 
-           class="h-16 w-full object-cover rounded-lg border border-gray-200 cursor-pointer hover:border-emerald-500 hover:opacity-80 transition duration-150">
+      <img src="book1.jpg" alt="The Hunger Games" onclick="changeImage(this.src)" class="h-16 w-full object-cover rounded-lg border-2 border-emerald-500 cursor-pointer hover:opacity-80 transition">
+      <img src="book2.jpg" alt="Catching Fire" onclick="changeImage(this.src)" class="h-16 w-full object-cover rounded-lg border border-gray-200 cursor-pointer hover:border-emerald-500 hover:opacity-80 transition">
+      <img src="book3.jpg" alt="Mockingjay" onclick="changeImage(this.src)" class="h-16 w-full object-cover rounded-lg border border-gray-200 cursor-pointer hover:border-emerald-500 hover:opacity-80 transition">
+      <img src="book4.jpg" alt="The Ballad of Songbirds and Snakes" onclick="changeImage(this.src)" class="h-16 w-full object-cover rounded-lg border border-gray-200 cursor-pointer hover:border-emerald-500 hover:opacity-80 transition">
+      <img src="book5.jpg" alt="Sunrise on the Reaping" onclick="changeImage(this.src)" class="h-16 w-full object-cover rounded-lg border border-gray-200 cursor-pointer hover:border-emerald-500 hover:opacity-80 transition">
     </div>
 
-    <!-- BOOK DETAILS & BUY BUTTON -->
+    <!-- CORE CARD -->
     <div class="p-6">
+      <div class="flex items-center gap-2 mb-2 text-xs text-gray-500 font-medium">
+        <span>Seller: <strong class="text-gray-900">simedba</strong></span>
+        <span>•</span>
+        <span>Casablanca, Morocco</span>
+      </div>
+
       <div class="flex items-baseline justify-between mb-3">
-        <h1 class="text-xl font-extrabold text-gray-900 leading-tight">The Hunger Games (5-Book Set)</h1>
-        <!-- Adjust price as needed -->
+        <h1 class="text-2xl font-black text-gray-900">The Hunger Games (5 Books)</h1>
         <span class="text-2xl font-black text-emerald-700">220 <span class="text-sm font-semibold">MAD</span></span>
       </div>
 
-      <div class="flex flex-wrap gap-2 mb-4">
+      <div class="flex flex-wrap gap-2 mb-6">
         <span class="text-xs bg-gray-100 text-gray-700 font-medium px-2.5 py-1 rounded-md">Suzanne Collins</span>
-        <span class="text-xs bg-gray-100 text-gray-700 font-medium px-2.5 py-1 rounded-md">English Editions</span>
+        <span class="text-xs bg-gray-100 text-gray-700 font-medium px-2.5 py-1 rounded-md">English Edition</span>
         <span class="text-xs bg-emerald-50 text-emerald-800 font-medium px-2.5 py-1 rounded-md">Very Good Condition</span>
         <span class="text-xs bg-gray-100 text-gray-700 font-medium px-2.5 py-1 rounded-md">📍 Casablanca</span>
       </div>
-<!-- Add this seller credit line inside the card -->
-<div class="flex items-center gap-2 mb-3 text-xs text-gray-500 font-medium">
-  <span>Seller: <strong class="text-gray-800">simedba</strong></span>
-  <span>•</span>
-  <span>Casablanca, Morocco</span>
-</div>
-      <!-- LIST OF BOOKS INCLUDED -->
-      <div class="bg-gray-50 rounded-xl p-3 mb-5 border border-gray-100 text-xs text-gray-700 space-y-1">
-        <p class="font-bold text-gray-900 mb-1">Includes all 5 books:</p>
-        <p>1. <em>The Hunger Games</em> (Book 1)</p>
-        <p>2. <em>Catching Fire</em> (Book 2)</p>
-        <p>3. <em>Mockingjay</em> (Book 3)</p>
-        <p>4. <em>The Ballad of Songbirds and Snakes</em> (Prequel)</p>
-        <p>5. <em>Sunrise on the Reaping</em> (Prequel)</p>
-      </div>
 
-      <!-- WHATSAPP DIRECT BUTTON -->
+      <!-- WHATSAPP CTA BUTTON -->
       <a href="https://wa.me/212619660854?text=Hi!%20I%20saw%20your%20listing%20for%20The%20Hunger%20Games%205-book%20set.%20Is%20it%20still%20available%3F" 
          target="_blank" 
          rel="noopener noreferrer"
-         class="w-full flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-3.5 px-6 rounded-2xl shadow-md hover:shadow-lg transition duration-200">
-        <!-- WhatsApp Icon SVG -->
-        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.539 1.93.826 2.791.826 3.182 0 5.768-2.587 5.769-5.767.001-3.182-2.585-5.769-5.77-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.062-2.115-.526-1.815-.751-2.986-2.595-3.077-2.716-.09-.12-1.026-1.364-1.026-2.602 0-1.238.647-1.848.877-2.102.23-.254.5-.318.667-.318.167 0 .334.002.479.01.153.007.359-.058.562.43.209.502.712 1.737.774 1.863.062.126.104.273.019.439-.084.166-.126.27-.249.417-.123.147-.258.328-.369.44-.124.125-.253.261-.109.509.144.248.641 1.057 1.378 1.713.949.845 1.748 1.107 1.996 1.231.248.124.394.104.539-.063.146-.166.626-.73.792-.98.166-.25.333-.209.562-.124.23.084 1.458.687 1.708.812.25.125.417.188.479.292.062.104.062.605-.082 1.01z"/>
-        </svg>
-        <span>Message on WhatsApp</span>
+         class="w-full flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-3.5 px-6 rounded-2xl shadow-md hover:shadow-lg transition duration-200 mb-6">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.539 1.93.826 2.791.826 3.182 0 5.768-2.587 5.769-5.767.001-3.182-2.585-5.769-5.77-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.062-2.115-.526-1.815-.751-2.986-2.595-3.077-2.716-.09-.12-1.026-1.364-1.026-2.602 0-1.238.647-1.848.877-2.102.23-.254.5-.318.667-.318.167 0 .334.002.479.01.153.007.359-.058.562.43.209.502.712 1.737.774 1.863.062.126.104.273.019.439-.084.166-.126.27-.249.417-.123.147-.258.328-.369.44-.124.125-.253.261-.109.509.144.248.641 1.057 1.378 1.713.949.845 1.748 1.107 1.996 1.231.248.124.394.104.539-.063.146-.166.626-.73.792-.98.166-.25.333-.209.562-.124.23.084 1.458.687 1.708.812.25.125.417.188.479.292.062.104.062.605-.082 1.01z"/></svg>
+        <span>Order on WhatsApp (+212 619-660854)</span>
       </a>
 
-      <p class="text-center text-xs text-gray-400 mt-4">
-        Hand-to-hand delivery in Casablanca • Cash on delivery
-      </p>
+      <!-- RICH CONTENT SECTION (Satisfies Bing Webmaster Guidelines) -->
+      <div class="border-t border-gray-100 pt-6 space-y-6 text-sm text-gray-700">
+        
+        <div>
+          <h2 class="text-base font-bold text-gray-900 mb-2">📚 Included in this 5-Book Collection</h2>
+          <ul class="space-y-2 text-xs text-gray-600">
+            <li><strong>1. The Hunger Games:</strong> Katniss Everdeen volunteers for the 74th annual Hunger Games to protect her sister.</li>
+            <li><strong>2. Catching Fire:</strong> The embers of rebellion spread as Katniss and Peeta are forced into the 75th Quarter Quell.</li>
+            <li><strong>3. Mockingjay:</strong> Full-scale uprising across the districts of Panem against the Capitol.</li>
+            <li><strong>4. The Ballad of Songbirds and Snakes:</strong> The prequel chronicling Coriolanus Snow's youth during the 10th Hunger Games.</li>
+            <li><strong>5. Sunrise on the Reaping:</strong> The prequel following Haymitch Abernathy during the 50th Hunger Games (Second Quarter Quell).</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-base font-bold text-gray-900 mb-2">🔍 Book Specifications & Condition</h2>
+          <div class="grid grid-cols-2 gap-2 text-xs">
+            <div class="p-2.5 bg-gray-50 rounded-lg"><strong>Language:</strong> English</div>
+            <div class="p-2.5 bg-gray-50 rounded-lg"><strong>Format:</strong> Paperback</div>
+            <div class="p-2.5 bg-gray-50 rounded-lg"><strong>Condition:</strong> Clean pages, tight binding</div>
+            <div class="p-2.5 bg-gray-50 rounded-lg"><strong>Publisher:</strong> Scholastic</div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-base font-bold text-gray-900 mb-2">📍 Pickup & Delivery in Casablanca</h2>
+          <p class="text-xs text-gray-600 leading-relaxed">
+            Hand-to-hand delivery available across Casablanca (Maârif, Gauthier, Anfa, Sidi Maârouf, or central Tramway stations). Cash payment upon delivery. Shipping to other cities in Morocco (Rabat, Marrakech, Tangier) available upon agreement.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="text-center border-t border-gray-100 pt-4 mt-6 text-xs text-gray-400">
+        Curated and listed by <strong>simedba</strong> • Casablanca, Morocco
+      </div>
+
     </div>
 
   </div>
 
-  <!-- JAVASCRIPT FOR SWITCHING PHOTOS -->
   <script>
     function changeImage(newSrc) {
       document.getElementById('main-image').src = newSrc;
